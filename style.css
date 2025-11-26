@@ -1,0 +1,189 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 20px;
+  background-image: url(https://conhecimentocientifico.r7.com/wp-content/uploads/2020/08/espaco-sideral.jpg);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.664);
+  color: greenyellow;
+  margin: 5px 300px;
+  padding: 20px;
+  border-radius: 15px;
+  border: 2px solid greenyellow;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.controls input,
+.controls select,
+.controls button {
+  padding: 8px 10px;
+  font-size: 14px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.card {
+  background-color: rgba(108, 250, 108, 0.6);
+  border-radius: 15px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  border: 5px solid white;
+  transition: 0.5s;
+  box-shadow: 0 0 20px greenyellow;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  opacity: 0.5;
+  transition: 1.5s;
+}
+
+.status {
+  font-weight: bold;
+}
+
+.status.alive {
+  color: rgb(255, 255, 255);
+}
+
+.status.dead {
+  color: red;
+}
+
+.status.unknown {
+  color: rgb(50, 50, 50);
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+}
+
+.actions button {
+  padding: 10px 20px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.message {
+  text-align: center;
+  grid-column: 1/3;
+  color: #3b3b3b;
+}
+
+.card:hover {
+  z-index: 100;
+  opacity: 1;
+  box-shadow: 0 0 50px greenyellow;
+  padding: 5px;
+  background-color: rgba(108, 250, 108, 0.9);
+  transform: scale(1.1);
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in;
+}
+
+.card:hover img {
+  opacity: 1;
+}
+
+h1 {
+  color: white;
+}
+
+#counter {
+  color: white;
+  font-weight: bolder;
+}
+
+#counterPages {
+  color: white;
+  font-weight: bolder;
+}
+
+input {
+  border-radius: 15px;
+  padding: 5px 150px;
+}
+
+button {
+  border-radius: 15px;
+  padding: 20px 60px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  font-weight: bold;
+  border: 3px solid rgba(108, 250, 108, 0.8);
+  box-shadow: 0px 0px 20px rgba(108, 250, 108, 1);
+  transition: 0.8s;
+}
+
+button:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 100px rgba(108, 250, 108, 1);
+  transform: scale(1.1);
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+}
+
+option {
+  padding: 20px;
+  background-color: black;
+  color: white;
+}
+
+select {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  border-radius: 2px;
+  margin-right: 10px;
+  border: 3px solid greenyellow;
+}
+
+#contadores {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: black;
+  box-shadow: 0px 0px 100px rgb(255, 255, 255);
+  margin: 0px 500px;
+  border-radius: 15px;
+  margin: 5;
+  padding: 30px;
+  transition: 0.8s;
+  border: 1px solid rgba(108, 250, 108, 1);
+}
+
+#contadores:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 0px 250px rgba(108, 250, 108, 1);
+  border: 3px solid rgba(108, 250, 108, 1);
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+}
