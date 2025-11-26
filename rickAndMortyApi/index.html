@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de personagens</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1><strong>Galeria de Personagens - Rick and Morty</strong></h1>
+    <br>
+    <div id="contadores">
+    <p id="counter"><strong></strong></p>
+    <p id="counterPages"><strong></strong></p>
+    </div>
+
+    <br>
+
+    <section class="controls">
+        <input 
+        type="text" 
+        id="searchInput" 
+        placeholder="Buscar">
+    </section>
+
+    <select name="" id="statusFilter">
+        <option value="value">Todos os status</option>
+        <option value="alive">Vivo</option>
+        <option value="dead">Morto</option>
+        <option value="unknown">Desconhecido</option>
+    </select>
+
+    <button id="searchButton"><strong>BUSCAR</strong></button>
+    <br><br><br>
+
+    <section id="gallery" class="gallery">
+<!-- Os cards dos personagens ficam aqui vindos do Json -->
+    </section>
+    <br><br>
+
+    <div class="action">
+        <button id="loadMoreButton"><strong>CARREGAR MAIS</strong></button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
